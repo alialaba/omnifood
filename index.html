@@ -9,14 +9,79 @@
     <title>Omnifoods &mdash; Never cook again!</title>
 
     <!-- font style css file -->
-    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="css/font.css">
     <!-- end of font style css file -->
     <!-- custom Cascading style sheet -->
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="css/index.css">
     <!--end of  custom Cascading style sheet -->
+    <!-- ionicons script -->
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+    <!-- end ionicons script -->
 </head>
 
 <body>
+    <header class="header">
+
+        <a href="#" class="">
+            <img class="logo" src="imgs/omnifood-logo.png" alt="omnifood">
+        </a>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="#how">How it works</a></li>
+                <li class="nav-item"><a class="nav-link" href="#meals">Meals</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link nav-link__cta" href="#cta">Try for free</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn-mobile-nav">
+
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+    </header>
+    <main>
+        <section class="section-hero">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero-box">
+                        <h1 class="hero-box__title">A healthy meal delivered to your door, every single day</h1>
+                        <p class="hero-box__subtitle">The smart 365-days-per-year food subscription that will make you
+                            eat
+                            healthy again. Tailored to your
+                            personal tastes and
+                            nutritional needs.</p>
+                        <a href="#cta" class="btn btn__full btn-right-sm">Start eating well</a>
+                        <a href="#how" class="btn btn__outline">Learn more &darr;</a>
+                        <div class="delivered-meals">
+                            <div class="delivered-imgs">
+                                <img src="/imgs/customers/customer-1.jpg" alt="customer-1">
+                                <img src="/imgs/customers/customer-2.jpg" alt="customer-2">
+                                <img src="/imgs/customers/customer-3.jpg" alt="customer-3">
+                                <img src="/imgs/customers/customer-4.jpg" alt="customer-4">
+                                <img src="/imgs/customers/customer-5.jpg" alt="customer-5">
+                                <img src="/imgs/customers/customer-6.jpg" alt="customer-6">
+
+                            </div>
+                            <p class="delivered-text">
+                                <span>250,000+</span>meals delivered last year!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hero-box__img">
+                        <picture>
+                            <source srcset="/imgs/hero.webp" type="images/webp">
+                            <source srcset="/imgs/hero-min.png" type="image/png">
+                            <img src="/imgs/hero-min.png" class="hero-img" alt="customer enjoying her meal">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 </body>
 

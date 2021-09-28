@@ -1,0 +1,50 @@
+/* General cascating style */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+
+:root{
+    --pri-clr: #fdf2e9;
+    --sec-clr:  #e67e22;
+    --ter-clr:#cf711f;
+    --drk-choa-clr:#333;
+    --white-clr:#fff;
+    --stc-header-bx-shadow:0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+    --nav-rgba-clr:rgba(255, 255, 255, 0.9);
+}
+
+h1,h2{
+    margin-top: 1em;
+}
+html{
+    /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+}
+body{
+    line-height: 1;
+  font-weight: 400;
+  color: #555;
+font-family: 'Rubik', sans-serif;
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+.container{
+  /* width: 90%;
+  max-width: 1500px; */
+  margin: 0 auto;
+}
+
+/* HEADER STYLING */
+.logo{
+  height: 2.1rem;
+}
