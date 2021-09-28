@@ -48,3 +48,49 @@ font-family: 'Rubik', sans-serif;
 .logo{
   height: 2.1rem;
 }
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--pri-clr);
+
+  /* Because we want header to be sticky later */
+  padding: 0 4.8rem;
+  height:9.6rem ;
+  position: relative;
+}
+/**************************/
+/* NAVIGATION */
+/**************************/
+.nav-list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+.nav-link:visited,
+.nav-link:link{
+  display: inline-block;
+  color: var(--drk-choa-clr);
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.nav-link:hover,
+.nav-link:active{
+  color: var(--ter-clr);
+}
+.nav-link.nav-link__cta{
+  background: var(--sec-clr);
+  padding: 1.2rem 2.4rem;
+  color: var(--white-clr);
+  border-radius: 5px;
+}
+.nav-link.nav-link__cta:hover{
+  background: var(--ter-clr);
+
+}
+
+.btn-mobile-nav{
+display: none;
+}
