@@ -55,7 +55,7 @@ font-family: 'Rubik', sans-serif;
   background: var(--pri-clr);
 
   /* Because we want header to be sticky later */
-  padding: 0 4.4rem;
+  padding: 0 4.8rem;
   height:9.6rem ;
   position: relative;
 }
@@ -202,7 +202,7 @@ margin: 0;
   box-shadow: inset 0 0 0 3px #fff;
 }
 /**************************/
-/* BELOW 944px (Tablets) */
+/* BELOW 544px (Phones) */
 /**************************/
 
 @media(max-width:500px){
@@ -212,6 +212,14 @@ margin: 0;
     height: 4.2rem;
 
   } */
+  .btn,
+  .btn:link,
+  .btn:visited{
+     padding: 2.4rem 1.6rem;
+  }
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
   .delivered-text{
     font-size: 1.4rem;
     text-align: center;
@@ -296,3 +304,14 @@ margin: 0;
  
 }
 
+@media(min-width:1000px){
+  .hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
+    .hero-box__title{
+    font-size: 4.8rem;
+    
+  }
+}
