@@ -39,8 +39,8 @@ font-family: 'Rubik', sans-serif;
   overflow-x: hidden;
 }
 .container{
-  /* width: 90%;
-  max-width: 1500px; */
+  width: 90%;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -55,7 +55,7 @@ font-family: 'Rubik', sans-serif;
   background: var(--pri-clr);
 
   /* Because we want header to be sticky later */
-  padding: 0 4.8rem;
+  padding: 0 4.4rem;
   height:9.6rem ;
   position: relative;
 }
@@ -112,9 +112,120 @@ color: var(--drk-choa-clr);
 }
 
 /**************************/
+/* SECTION HERO */
+/**************************/
+
+.section-hero{
+  background: var(--pri-clr);
+  padding: 4.8rem 0 9.6rem 0;
+}
+.hero{
+  /* padding: 0 3.2rem; */
+}
+.hero-box__title{
+  font-size:4.6rem ;
+  font-weight: 800;
+  margin-bottom: 2rem;
+
+}
+.hero-box__subtitle{
+  font-size: 2.1rem;
+  line-height: 1.5;
+   margin-bottom: 4.8rem;
+  
+}
+
+
+.delivered-meals{
+  display: flex;
+  align-items: center;
+  margin-top: 8rem;
+  gap: 1.8rem;
+}
+.delivered-imgs{
+  display: flex;
+ 
+}
+.delivered-imgs img{
+height: 4.8rem;
+width: 4.8rem;
+border-radius: 50%;
+border: 5px solid var(--pri-clr);
+margin-right: -1.6rem;
+}
+.delivered-text{
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.delivered-text span{
+  color: var(--ter-clr);
+}
+.delivered-meals img:last-child{
+margin: 0;
+}
+.btn,
+.btn:link,
+.btn:visited{
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 2rem;
+  font-weight: 600;
+  outline: none;
+   /* Only necessary for .btn */
+   border: none;
+   cursor: pointer;
+/* Put transition on original "state" */
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
+
+}
+.btn__full:link,
+.btn__full:visited{
+  background: var(--sec-clr);
+  color: var(--white-clr);
+}
+.btn__full:hover,
+.btn__full:active{
+  background: var(--ter-clr);
+}
+.btn__outline:link,
+.btn__outline:visited{
+  background: var(--white-clr);
+  color: #555;
+}
+.btn__outline:hover,
+.btn__outline:active{
+  background: var(--pri-clr);
+ /* Trick to add border inside */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media(max-width:500px){
+  
+  /* .delivered-imgs img{
+    width: 4.2rem;
+    height: 4.2rem;
+
+  } */
+  .delivered-text{
+    font-size: 1.4rem;
+    text-align: center;
+   width: 47%;
+  }
+}
+/**************************/
 /* BELOW 944px (Tablets) */
 /**************************/
 @media(max-width:944px){
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
   .btn-mobile-nav{
     display: block;
     /* z-index: 9999; */
@@ -169,5 +280,19 @@ color: var(--drk-choa-clr);
     display: none;
   }
   
-  
+ .hero-box, .hero-box__img{
+  text-align: center;
 }
+
+.hero-img {
+    width: 60%;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+ 
+}
+
