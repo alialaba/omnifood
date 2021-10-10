@@ -7,3 +7,22 @@ btnEl.addEventListener('click', () => {
 })
 
 // Sticky navigation
+let sectionHeroEl = document.querySelector('.section-hero');
+const obs = new IntersectionObserver(
+    function (entries) {
+        let ent = entries[0];
+        if (ent.isIntersecting === false) {
+            document.body.classList.add('sticky');
+        }
+        if (ent.isIntersecting === true) {
+            document.body.classList.remove('sticky');
+        }
+
+    },
+    {
+        rootMargin: '-80px',
+        threshold: 0,
+        root: null
+    }
+)
+obs.observe(sectionHeroEl);
