@@ -343,6 +343,9 @@ margin: 0;
   .nav-open .icon-mobile-nav[name="menu-outline"]{
     display: none;
   }
+  .hero{
+    grid-template-columns: 1fr;
+  }
   
  .hero-box, .hero-box__img{
   text-align: center;
