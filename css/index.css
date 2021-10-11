@@ -267,7 +267,7 @@ body {
 .step-img-box::after {
   content: "";
   position: absolute;
-  /* display: block; */
+  display: block;
   top: 50%;
   left: 50%;
   border-radius: 50%;
@@ -286,6 +286,25 @@ body {
   padding-bottom: 45%;
   z-index: -1;
 }
+.step-img {
+  width: 35%;
+}
+
+/*********************/
+/* Using Grid General */
+/*********************/
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--center-v {
+  align-items: center;
+}
+
 /**************************/
 /* BELOW 544px (Phones) */
 /**************************/
@@ -312,6 +331,8 @@ body {
   .featured-logos img {
     height: 1.2rem;
   }
+
+  
   /* .hero-box__img{
     width: 80%;
   } */
@@ -323,6 +344,9 @@ body {
   html {
     /* 8px / 16px = 0.5 = 50% */
     font-size: 50%;
+  }
+  .step-number {
+    font-size: 7.4rem;
   }
   .btn-mobile-nav {
     display: block;
@@ -379,6 +403,7 @@ body {
   }
   .hero {
     grid-template-columns: 1fr;
+    gap: 6.4rem;
   }
 
   .hero-box,
