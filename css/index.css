@@ -289,6 +289,74 @@ body {
 .step-img {
   width: 35%;
 }
+/**************************/
+/* MEALS SECTION */
+/**************************/
+
+.section-meal {
+  padding: 9.6rem 0;
+}
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  transition: all 0.4s;
+  overflow: hidden;
+}
+.meal-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.meal-attribute {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  gap: 1.8rem;
+}
+.meal-icon {
+  color: var(--sec-clr);
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.meal-img {
+  width: 100%;
+}
+.meal-tag {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+.tag {
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+}
+.tag-vegetarian {
+  background: #51cf66;
+}
+.tag-vegan {
+  background: #94d82d;
+}
+.tag-paleo {
+  background: #ffd43b;
+}
 
 /*********************/
 /* Using Grid General */
@@ -300,6 +368,9 @@ body {
 }
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
 }
 .grid--center-v {
   align-items: center;
