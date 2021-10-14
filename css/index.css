@@ -380,7 +380,8 @@ body {
 .grid--center-v {
   align-items: center;
 }
-.how-title {
+.how-title,
+.subhead-title {
   font-size: 1.6rem;
   color: var(--ter-clr);
   margin-bottom: 1.6rem;
@@ -398,7 +399,8 @@ body {
   letter-spacing: -0.5px;
   font-weight: 700;
 }
-.how-subtitle {
+.how-subtitle,
+.subhead-subtitle {
   font-size: 4.4rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
