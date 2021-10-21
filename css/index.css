@@ -522,6 +522,7 @@ body {
   .nav-link:visited {
     font-size: 3rem;
   }
+  
   /******Navbar toggling *******/
   .nav-open .nav {
     transform: translateX(0);
