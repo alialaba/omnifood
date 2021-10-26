@@ -147,7 +147,8 @@ body {
 .hero-img {
   width: 100%;
 }
-.hero-box__title {
+.hero-box__title,
+.testimonial-subtitle {
   font-size: 4.6rem;
   font-weight: 800;
   margin-bottom: 2rem;
@@ -363,7 +364,56 @@ body {
   font-size: 1.8rem;
   margin-top: 2em;
 }
+/**************************/
+/* SECTION TESTIMONIAL */
+/**************************/
+.section-testimonials {
+  background: var(--pri-clr);
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+.testimonial-container {
+  padding: 9.6rem;
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
 
+.testimonial-img {
+  border-radius: 50%;
+  width: 6.4rem;
+  margin-bottom: 1.6rem;
+}
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.gallery-item {
+  overflow: hidden;
+}
+.gallery-item img {
+  width: 100%;
+  display: block;
+  transition: all 0.4s;
+}
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
 /*********************/
 /* Using General CSS*/
 /*********************/
@@ -382,7 +432,8 @@ body {
   align-items: center;
 }
 .how-title,
-.subhead-title {
+.subhead-title,
+.testimonial-title {
   font-size: 1.6rem;
   color: var(--ter-clr);
   margin-bottom: 1.6rem;
@@ -444,6 +495,15 @@ body {
   color: #cf711f;
   border-bottom: 1px solid transparent;
 }
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 1344px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 /**************************/
 /* BELOW 1200px (Landscape Tablets) */
@@ -469,6 +529,9 @@ body {
 
   .hero {
     gap: 4.8rem;
+  }
+  .testimonial-container {
+    padding: 9.6rem 3.2rem;
   }
 }
 /**************************/
@@ -522,7 +585,7 @@ body {
   .nav-link:visited {
     font-size: 3rem;
   }
-  
+
   /******Navbar toggling *******/
   .nav-open .nav {
     transform: translateX(0);
@@ -559,6 +622,13 @@ body {
 
   .featured-logos img {
     height: 2.2rem;
+  }
+  /***Tesimonial section***/
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 /**************************/
@@ -621,9 +691,12 @@ body {
   .step-img-box {
     transform: translateY(2.4rem);
   }
-  /* .hero-box__img{
-    width: 80%;
-  } */
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /**************************/
