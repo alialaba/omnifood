@@ -482,6 +482,32 @@ body {
   text-align: center;
   margin-top: 4.8rem;
 }
+.plan-details {
+  text-align: center;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  margin: 2rem 0 6rem 0;
+}
+
+.feature-icon {
+  color: var(--sec-clr);
+  background: var(--nur-clr);
+  font-size: 2rem;
+  border-radius: 50%;
+  height: 3.2rem;
+  width: 3.2rem;
+  padding: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+.feature-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.feature-text {
+  line-height: 1.8;
+  font-size: 1.8rem;
+}
 /*********************/
 /* Using General CSS*/
 /*********************/
@@ -714,6 +740,9 @@ body {
   .diets {
     grid-column: 1 / -1;
     justify-self: center;
+  }
+  .pricing-plan {
+    width: 100%;
   }
 }
 
