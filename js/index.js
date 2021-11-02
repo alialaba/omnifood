@@ -29,11 +29,11 @@ if(href !== '#' && href.startsWith('#')){
 
 
 // Close mobile naviagtion
-if(link.classList.contains('nav-list'))
+if(link.classList.contains('nav-link'))
 headerEl.classList.toggle("nav-open");
 
-})
-})
+});
+});
 
 
 
