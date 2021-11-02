@@ -656,6 +656,9 @@ body {
   color: #cf711f;
   border-bottom: 1px solid transparent;
 }
+.btn-right-sm{
+  margin-right:1.6rem !important;
+}
 
 /**************************/
 /* BELOW 1344px (Smaller desktops) */
@@ -747,7 +750,9 @@ body {
   .nav-link:visited {
     font-size: 3rem;
   }
-
+.plan-details{
+  padding:3rem;
+}
   /******Navbar toggling *******/
   .nav-open .nav {
     transform: translateX(0);
