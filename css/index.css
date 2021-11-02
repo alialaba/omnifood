@@ -594,7 +594,7 @@ body {
 }
 .how-title,
 .subhead-title,
-.testimonial-title {
+.testimonial-title,.pricing-title {
   font-size: 1.6rem;
   color: var(--ter-clr);
   margin-bottom: 1.6rem;
